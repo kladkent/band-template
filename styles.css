@@ -50,9 +50,15 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 
-/*li.dropdown{
-	display: inline-block;
-}*/
+.arrow-icon{
+  width: 10px;
+  height: 10px;
+}
+
+.bar-icon, .search-icon{
+  width: 15px;
+  height: 15px; 
+}
 
 .dropdown-content {
   display: none;
