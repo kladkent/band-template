@@ -12,81 +12,124 @@
 <body>
 
 	<!--Mobile Navbar-->
-	<div class="navbar-mobile">
-		<ul>
-			<li>
-				<a href="">HOME</a>
-			</li>
-			<li class="hide">
-				<a href="">BAND</a>
-			</li>
-			<li class="hide">
-				<a href="">TOUR</a>
-			</li>
-			<li class="hide">
-				<a href="">CONTACT</a>
-			</li>
-			<li class="hide">
-				<a href="">MERCH</a>
-			</li>
-			<li>
-				<img class="icon-bar" src="icons/menu-bar-light.svg" alt="bar-icon">
-			</li>						
-		</ul>
-	</div>
-
-	<!--Desktop Navbar-->
-	<div class="navbar-desktop">
-		<ul>
-			<li>
-				<a href="">HOME</a>
-			</li>
-			<li>
-				<a href="">BAND</a>
-			</li>
-			<li>
-				<a href="">TOUR</a>
-			</li>
-			<li>
-				<a href="">CONTACT</a>
-			</li>
-			<li>
-				<a href="">MORE</a>
-				<div class="dropdown-content">
-					<a href="">Merchandise</a>
-					<a href="">Extras</a>
-					<a href="">Media</a>
-				</div>
-			</li>
-			<li>
-				<img class="icon-search" src="icons/search.svg" alt="search-icon">
-			</li>						
-		</ul>
-	</div>
-
-	<div class="carousel">
-		<div class="carousel-item show">
-			<img src="images/band-1.jpg">
-			<div class="carousel-details">
-				<h2>Los Angeles</h2>
-				<p>We had the best time playing at Venice Beach!</p>
-			</div>
-		</div>
-		<div class="carousel-item hide">
-			<img src="images/band-2.jpg">
-			<div class="carousel-details">
-				<h2>New York</h2>
-				<p>The atmosphere in New York is Amazing.</p>
-			</div>
-		</div>
-		<div class="carousel-item hide">
-			<img src="images/band-3.jpg">
-			<div class="carousel-details">
-				<h2>Chicago</h2>
-				<p>Than you Chicago - A night we won't forget</p>
-			</div>
+	<div class="row">
+		<div class="navbar-mobile">
+			<ul>
+				<li>
+					<a href="">HOME</a>
+				</li>
+				<li class="hide">
+					<a href="">BAND</a>
+				</li>
+				<li class="hide">
+					<a href="">TOUR</a>
+				</li>
+				<li class="hide">
+					<a href="">CONTACT</a>
+				</li>
+				<li class="hide">
+					<a href="">MERCH</a>
+				</li>
+				<li>
+					<img class="icon-bar" src="icons/menu-bar-light.svg" alt="bar-icon">
+				</li>						
+			</ul>
 		</div>		
 	</div>
+
+
+	<!--Desktop Navbar-->
+	<div class="row">
+		<div class="navbar-desktop">
+			<ul>
+				<li>
+					<a href="">HOME</a>
+				</li>
+				<li>
+					<a href="">BAND</a>
+				</li>
+				<li>
+					<a href="">TOUR</a>
+				</li>
+				<li>
+					<a href="">CONTACT</a>
+				</li>
+				<li>
+					<a href="">MORE
+						<img class="icon-arrow" src="icons/arrow-down-light.svg">
+					</a>
+					<div class="dropdown-content">
+						<a href="">Merchandise</a>
+						<a href="">Extras</a>
+						<a href="">Media</a>
+					</div>
+				</li>
+				<li>
+					<img class="icon-search" src="icons/search.svg" alt="search-icon">
+				</li>						
+			</ul>
+		</div>
+	</div>
+
+	<!--Carousel-->
+	<div class="row">
+		<div class="carousel">
+			<div class="carousel-item show">
+				<img src="images/band-1.jpg">
+				<div class="carousel-details">
+					<h2>Los Angeles</h2>
+					<p>We had the best time playing at Venice Beach!</p>
+				</div>
+			</div>
+			<div class="carousel-item hide">
+				<img src="images/band-2.jpg">
+				<div class="carousel-details">
+					<h2>New York</h2>
+					<p>The atmosphere in New York is Amazing.</p>
+				</div>
+			</div>
+			<div class="carousel-item hide">
+				<img src="images/band-3.jpg">
+				<div class="carousel-details">
+					<h2>Chicago</h2>
+					<p>Than you Chicago - A night we won't forget</p>
+				</div>
+			</div>		
+		</div>	
+	</div>
+
+
+	<!--The Band-->
+	<div class="row">
+		<div class="band">
+			<h1>THE BAND</h1>
+			<p><i>We love music</i></p>
+			<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>	
+	</div>
+
+	<!--Team-->
+	<div class="row team">
+		<div class="col-s-4 display-image">
+			<p>Name</p>
+			<img src="images/w3Image.jpg">
+		</div>
+		<div class="col-s-4 display-image">
+			<p>Name</p>
+			<img src="images/w3Image.jpg">
+		</div>
+		<div class="col-s-4 display-image">
+			<p>Name</p>
+			<img src="images/w3Image.jpg">
+		</div>
+	</div>
+
+	<!--Tour-->
+	<div class="row tour">
+		<h1>TOUR DATES</h1>
+		<p><i>Remember to book your tickets!</i></p>
+	</div>
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="index.js"></script>
