@@ -3,6 +3,7 @@ $(document).ready(
 	function(){
 
 		$("div.navbar-mobile > ul > li:nth-child(6)").on("click", function(){
+			
 			$("li").each(function(){
 				if ($(this).hasClass("hide")) {
 					$(this).removeClass("hide");
@@ -12,8 +13,8 @@ $(document).ready(
 					$(this).addClass("hide");					
 				}
 			});
-		});
 
+		});
 
 
 		setInterval(function(){
