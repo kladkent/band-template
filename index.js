@@ -1,40 +1,50 @@
-var slideIndex = 0;
-showSlides();
-
-
-function showSlides() {
+$(document).ready(
 	
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
+	function(){
+
+		$("div.navbar-mobile > ul > li:nth-child(6)").on("click", function(){
+			$("li").each(function(){
+				if ($(this).hasClass("hide")) {
+					$(this).removeClass("hide");
+					$(this).addClass("show");
+				} else if ($(this).hasClass("show")){
+					$(this).removeClass("show");
+					$(this).addClass("hide");					
+				}
+			});
+		});
+
+
+
+		setInterval(function(){
+
+		$(".carousel-item").each(
+			function(index){
+				if($(this).hasClass("show")){
+					$(this).removeClass("show");
+					$(this).addClass("hide");
+						if (index < 2) {
+							showItem(index + 1);
+						} else {
+							showItem(0)
+						}
+					return false;
+				}
+			}
+		);			
 		
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";  
+		function showItem(carouselItem){
+			$(".carousel-item").each(
+				function(index){
+					if (carouselItem === index) {
+						$(this).removeClass("hide");
+						$(this).addClass("show");
+						return false;
+					}
+				}
+			);				
+		}
+
+		},3000);
 	}
-	
-	slideIndex++;
-			  
-	if (slideIndex > slides.length) {
-		slideIndex = 1;
-	}    
-			  
-	slides[slideIndex-1].style.display = "block";  
-	setTimeout(showSlides, 10000); // Change image every 2 seconds
-			
-}
-
-
-function arrowDarkIcon(){
-	document.getElementsByClassName("arrow-icon")[0].src="icons/arrow-down-dark.svg";
-}
-
-function arrowWhiteIcon(){
-	document.getElementsByClassName("arrow-icon")[0].src="icons/arrow-down-white.svg";
-}
-
-function barDarkIcon(){
-	document.getElementsByClassName("bar-icon")[0].src="icons/menu-bar-dark.svg";
-}
-
-function barWhiteIcon(){
-	document.getElementsByClassName("bar-icon")[0].src="icons/menu-bar-white.svg";
-}
+);
