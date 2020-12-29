@@ -252,10 +252,38 @@ div.ticket-details button:hover{
 }
 
 
+/*Contact*/
+div.contact{
+  padding: 64px 16px 64px 16px;
+}
+
+div.contact h1, p{
+  text-align: center;
+}
+
+div.contact h1{
+  letter-spacing: 4px;
+}
+
+div.contact p{
+  opacity: 0.60;
+}
+
+/*Road*/
+div.road-map img{
+  width: 100%;
+  height: auto;
+  filter: grayscale(50%);
+}
+
+/*Footer*/
+div.footer{
+  padding: 64px 24px 64px 24px;
+}
+
 [class*="col-"] {
   width: 100%;
 }
-
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
