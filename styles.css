@@ -225,6 +225,9 @@ div.tickets img{
 div.ticket-details{
   background-color: #ffffff;
   padding: 16px;
+}
+
+div.ticket-details > p{
   text-align: left;
 }
 
