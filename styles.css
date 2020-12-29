@@ -127,6 +127,7 @@ div.band{
   text-align: center;
   padding: 16px;
   max-width: 800px;
+  margin:auto;
 }
 
 div.band > h1 {
@@ -145,16 +146,21 @@ div.band > p:last-child {
 /*Team*/
 div.team{
   text-align: center;
-  padding: 16px;
+  padding: 16px 16px 64px 16px ;
   max-width: 800px;
+  margin: auto;
 }
 
+
+/*Tour and Tickets wrapper*/
+div.tour-tickets-wrapper{
+  background-color: #000000;
+}
 
 /*Tour*/
 div.tour{
   text-align: center;
-  background-color: #000000;
-  padding: 64px 16px 64px 16px;
+  padding: 64px 16px 0px 16px;
   color: #ffffff;
 }
 
@@ -196,47 +202,55 @@ div.tour span{
   display: inline-block;
 }
 
-div.tickets{
-  padding: 32px 0px 32px 0px;
+/*tickets-wrapper*/
+div.tickets-wrapper{
   max-width: 800px;
+  margin: auto;
+  padding: 0px 16px 64px 16px;
 }
 
+/*tickets*/
 div.tickets > div{
-  background-color: #ffffff;
+  color: #000000;
+  padding: 0px;
   margin-bottom: 16px;
 }
 
 div.tickets img{
   width: 100%;
   height: auto;
+  display: block;
 }
 
 div.ticket-details{
   background-color: #ffffff;
-  color: #000000;
+  padding: 16px;
   text-align: left;
-  padding: 0px 16px 0px 16px;
 }
 
-div.ticket-details > p:nth-child(2){
+div.ticket-details p:first-child{
+  margin-top: 0px;
+}
+
+div.ticket-details p:nth-child(2){
   opacity: 0.60;
 }
 
 div.ticket-details button{
   color: #ffffff;
-  background-color: #000000;
-  margin-bottom: 16px;
-  border: none;
+  background: #000000;
   display: inline-block;
   padding: 8px 16px;
+  cursor: pointer;
   font: inherit;
+  border: none;
 }
 
 div.ticket-details button:hover{
-  cursor: pointer;
-  background-color: #a6a9ad;
   color: #000000;
+  background: #a6a9ad;
 }
+
 
 [class*="col-"] {
   width: 100%;
@@ -365,9 +379,30 @@ div.ticket-details button:hover{
     display: block;
   }
 
-  /*Team on Desktop*/
+
+  /*Team */
   div.team img{
     width: 60%;
+  }
+
+  /*Tour*/
+  div.tour ul{
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    max-width: 770px;
+    margin: auto;
+  }
+
+  /*tickets-wrapper*/
+  div.tickets-wrapper{
+    padding: 16px 8px 64px 8px;
+  }
+
+  /*tickets*/
+  div.tickets > div{
+    padding-right: 8px;
+    padding-left: 8px;
   }
 
 }
@@ -388,40 +423,9 @@ div.ticket-details button:hover{
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
 
-  div.band{
-    text-align: center;
-    padding: 16px;
-    max-width: 800px;
-    margin: auto;
-  }
-
-  div.team{
-    text-align: center;
-    padding: 16px;
-    max-width: 800px;
-    margin: auto;
-  }
-
-  div.tour ul{
-    background-color: #ffffff;
-    padding: 0px;
-    margin: 0px;
-    max-width: 800px;
-    margin: auto;
-  }
-
-  div.tickets{
-    padding: 32px 0px 32px 0px;
-    max-width: 800px;
-    margin: auto;
-  }
-
-  div.tickets > div:not(:last-child){
-
-  }
-
-  div.tickets > div{
-    padding: 0px;
+    /*Team */
+  div.team img{
+    width: 70%;
   }
 
 }
