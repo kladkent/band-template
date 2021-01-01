@@ -257,6 +257,13 @@ div.ticket-details button:hover{
 
 /*Contact*/
 div.contact{
+  max-width: 800px;
+  margin: auto;
+}
+
+
+/*Contact details*/
+div.contact{
   padding: 64px 16px 64px 16px;
 }
 
@@ -268,8 +275,47 @@ div.contact h1{
   letter-spacing: 4px;
 }
 
-div.contact p{
+div.contact > p{
   opacity: 0.60;
+}
+
+div.contact-details img{
+  height: 20px;
+  width: 20px;
+}
+
+div.contact-details table{
+  display: inline-block;
+}
+
+div.contact-details td{
+  padding-right: 10px;
+  font-style: normal;
+}
+
+/*Contact form*/
+div.contact-form input{
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font: inherit;
+  font-style: normal;
+}
+
+div.contact-form > form > input:not(:first-child){
+  margin-bottom: 10px;
+}
+
+div.contact-form > form > button{
+  float: right;
+  display: inline-block;
+  color: #ffffff;
+  background: #000000;
+  padding: 8px 16px;
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  font-style: normal;
 }
 
 /*Road*/
@@ -279,9 +325,18 @@ div.road-map img{
   filter: grayscale(50%);
 }
 
+
+
 /*Footer*/
 div.footer{
   padding: 64px 24px 64px 24px;
+  text-align: center;
+}
+
+div.footer img{
+  height: 20px;
+  width: 20px;
+  opacity: .60;
 }
 
 [class*="col-"] {
@@ -436,6 +491,21 @@ div.footer{
     padding-left: 8px;
   }
 
+  /*Contact form*/
+  div.contact-form > form > input:first-child{
+    width: 49%;
+    display: inline;
+    margin-right: 1%;
+  }
+
+  div.contact-form > form > input:nth-child(2){
+    width: 50%;
+    display: inline;
+  }
+
+  div.contact-form input{
+    float: left;
+  }
 }
 
 

@@ -16,19 +16,19 @@
 		<div class="navbar-mobile">
 			<ul>
 				<li>
-					<a href="">HOME</a>
+					<a href="#home-section">HOME</a>
 				</li>
 				<li class="hide">
-					<a href="">BAND</a>
+					<a href="#band-section">BAND</a>
 				</li>
 				<li class="hide">
-					<a href="">TOUR</a>
+					<a href="#tour-section">TOUR</a>
 				</li>
 				<li class="hide">
-					<a href="">CONTACT</a>
+					<a href="#contact-section">CONTACT</a>
 				</li>
 				<li class="hide">
-					<a href="">MERCH</a>
+					<a href="#home-section">MERCH</a>
 				</li>
 				<li>
 					<img class="icon-bar" src="icons/menu-bar-light.svg" alt="bar-icon">
@@ -43,16 +43,16 @@
 		<div class="navbar-desktop">
 			<ul>
 				<li>
-					<a href="">HOME</a>
+					<a href="#home-section">HOME</a>
 				</li>
 				<li>
-					<a href="">BAND</a>
+					<a href="#band-section">BAND</a>
 				</li>
 				<li>
-					<a href="">TOUR</a>
+					<a href="#tour-section">TOUR</a>
 				</li>
 				<li>
-					<a href="">CONTACT</a>
+					<a href="#contact-section">CONTACT</a>
 				</li>
 				<li>
 					<a href="">MORE
@@ -72,7 +72,7 @@
 	</div>
 
 	<!--Carousel-->
-	<div class="row">
+	<div class="row" id="home-section">
 		<div class="carousel">
 			<div class="carousel-item show">
 				<img src="images/band-1.jpg">
@@ -103,7 +103,7 @@
 	<div class="row wrapper">
 		<!--The Band-->
 		<div class="row">
-			<div class="band">
+			<div class="band" id="band-section">
 				<h1>THE BAND</h1>
 				<p><i>We love music</i></p>
 				<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -129,7 +129,7 @@
 		<!--tour-tickets-wrapper-->
 		<div class="tour-tickets-wrapper">
 			<!--Tour-->
-			<div class="row tour">
+			<div class="row tour" id="tour-section">
 				<h1>TOUR DATES</h1>
 				<p>
 					<i>Remember to book your tickets!</i>
@@ -180,17 +180,37 @@
 	</div>
 
 	<!--Contact-->
-	<div class="row contact">
+	<div class="row contact" id="contact-section">
+
 		<h1>CONTACT</h1>
 		<p><i>Fan? Drop a note!<i></p><br>
-		<div class="contact-details">
-			<i></i>" Chicago, US"<br>
-			<i></i>" Phone: +00 151515"<br>
-			<i></i>" Email: mail@mail.com"<br>
+		
+		<div class="contact-details col-s-5">
+			<table>
+				<tr>
+					<td><img src="icons/location.svg"></td>
+					<td>Chicago, US</td>
+				</tr>
+				<tr>
+					<td><img src="icons/call.svg"></td>
+					<td>Phone: +00 151515</td>
+				</tr>
+				<tr>
+					<td><img src="icons/contact.svg"></td>
+					<td>Email: mail@mail.com</td>
+				</tr>				
+			</table>
 		</div>
-		<div class="contact-form">
-			
+		
+		<div class="contact-form col-s-7">
+			<form>
+				<input type="text" name="Name" placeholder="Name">
+				<input type="text" name="Email" placeholder="Email">
+				<input type="text" name="Message" placeholder="Message">
+				<button>SEND</button>
+			</form>
 		</div>
+	
 	</div>
 
 	<!--Road-->
@@ -200,13 +220,13 @@
 
 	<!--Footer-->
 	<div class="footer">
-		
+		<img src="icons/facebook.svg">
+		<img src="icons/instagram.svg">
+		<img src="icons/snapchat.svg">
+		<img src="icons/pinterest.svg">
+		<img src="icons/twitter.svg">
+		<img src="icons/linkedin.svg">
 	</div>
-
-
-
-
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="index.js"></script>
