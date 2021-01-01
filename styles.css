@@ -339,6 +339,11 @@ div.footer img{
   opacity: .60;
 }
 
+div.footer p{
+  opacity: 0.60;
+  font-style: normal;
+}
+
 [class*="col-"] {
   width: 100%;
 }
